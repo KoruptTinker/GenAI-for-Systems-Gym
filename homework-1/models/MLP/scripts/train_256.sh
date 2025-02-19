@@ -15,7 +15,7 @@ python3 -m cache_replacement.policy_learning.cache_model.main \
   --experiment_base_dir=/share/$GROUP/$USER/GenAI-for-Systems-Gym/homework-1/models/MLP/experiments \
   --experiment_name=sec3task1n256 \
   --cache_configs=cache_replacement/policy_learning/cache/configs/default.json \
-  --model_bindings="loss=["log_likelihood"]" \
+  --model_bindings="loss=[\"log_likelihood\"]" \
   --model_bindings="address_embedder.max_vocab_size=5000" \
   --model_bindings="lstm_hidden_size=256" \
   --train_memtrace=/share/$GROUP/traces/astar_313B_train.csv \
