@@ -1,0 +1,100 @@
+2025-02-16 15:27:25.697981: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-02-16 15:27:26.618663: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1739737646.893872 1187004 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1739737647.061469 1187004 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-02-16 15:27:27.741096: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Traceback (most recent call last):
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorboard/compat/__init__.py", line 42, in tf
+    from tensorboard.compat import notf  # noqa: F401
+ImportError: cannot import name 'notf' from 'tensorboard.compat' (/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorboard/compat/__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/gpfs_common/share01/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/LSTM/cache_replacement/policy_learning/cache/main.py", line 37, in <module>
+    from torch.utils.tensorboard import SummaryWriter
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/torch/utils/tensorboard/__init__.py", line 12, in <module>
+    from .writer import FileWriter, SummaryWriter  # noqa: F401
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/torch/utils/tensorboard/writer.py", line 19, in <module>
+    from ._embedding import get_embedding_info, make_mat, make_sprite, make_tsv, write_pbtxt
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/torch/utils/tensorboard/_embedding.py", line 10, in <module>
+    _HAS_GFILE_JOIN = hasattr(tf.io.gfile, "join")
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorboard/lazy.py", line 65, in __getattr__
+    return getattr(load_once(self), attr_name)
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorboard/lazy.py", line 97, in wrapper
+    cache[arg] = f(arg)
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorboard/lazy.py", line 50, in load_once
+    module = load_fn()
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorboard/compat/__init__.py", line 45, in tf
+    import tensorflow
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/__init__.py", line 49, in <module>
+    from tensorflow._api.v2 import __internal__
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/_api/v2/__internal__/__init__.py", line 11, in <module>
+    from tensorflow._api.v2.__internal__ import distribute
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/_api/v2/__internal__/distribute/__init__.py", line 8, in <module>
+    from tensorflow._api.v2.__internal__.distribute import combinations
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/_api/v2/__internal__/distribute/combinations/__init__.py", line 8, in <module>
+    from tensorflow.python.distribute.combinations import env # line: 456
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/distribute/combinations.py", line 33, in <module>
+    from tensorflow.python.distribute import collective_all_reduce_strategy
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/distribute/collective_all_reduce_strategy.py", line 25, in <module>
+    from tensorflow.python.distribute import cross_device_ops as cross_device_ops_lib
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/distribute/cross_device_ops.py", line 28, in <module>
+    from tensorflow.python.distribute import cross_device_utils
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/distribute/cross_device_utils.py", line 22, in <module>
+    from tensorflow.python.distribute import values as value_lib
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/distribute/values.py", line 23, in <module>
+    from tensorflow.python.distribute import distribute_lib
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/distribute/distribute_lib.py", line 205, in <module>
+    from tensorflow.python.data.ops import dataset_ops
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/data/__init__.py", line 21, in <module>
+    from tensorflow.python.data import experimental
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/data/experimental/__init__.py", line 99, in <module>
+    from tensorflow.python.data.experimental import service
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/data/experimental/service/__init__.py", line 419, in <module>
+    from tensorflow.python.data.experimental.ops.data_service_ops import distribute
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/data/experimental/ops/data_service_ops.py", line 23, in <module>
+    from tensorflow.python.data.experimental.ops import compression_ops
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/data/experimental/ops/compression_ops.py", line 16, in <module>
+    from tensorflow.python.data.util import structure
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/data/util/structure.py", line 32, in <module>
+    from tensorflow.python.ops.ragged import ragged_tensor
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/ops/ragged/__init__.py", line 28, in <module>
+    from tensorflow.python.ops.ragged import ragged_tensor
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/ops/ragged/ragged_tensor.py", line 3149, in <module>
+    from tensorflow.python.ops.ragged import ragged_ops  # pylint: disable=unused-import, g-bad-import-order, g-import-not-at-top
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/ops/ragged/ragged_ops.py", line 41, in <module>
+    from tensorflow.python.ops.ragged import ragged_image_ops
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/ops/ragged/ragged_image_ops.py", line 24, in <module>
+    from tensorflow.python.ops import image_ops
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/ops/image_ops.py", line 159, in <module>
+    from tensorflow.python.ops.image_ops_impl import *
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/ops/image_ops_impl.py", line 40, in <module>
+    from tensorflow.python.ops import nn_impl
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/ops/nn_impl.py", line 26, in <module>
+    from tensorflow.python.ops import ctc_ops  # pylint: disable=unused-import
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/ops/ctc_ops.py", line 32, in <module>
+    from tensorflow.python.ops import custom_gradient
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/ops/custom_gradient.py", line 17, in <module>
+    from tensorflow.python.eager import backprop
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/eager/backprop.py", line 47, in <module>
+    from tensorflow.python.ops.parallel_for import control_flow_ops as pfor_ops
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/ops/parallel_for/control_flow_ops.py", line 37, in <module>
+    from tensorflow.python.ops.parallel_for.pfor import PFor
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/python/ops/parallel_for/pfor.py", line 25, in <module>
+    from tensorflow.compiler.tf2xla.python import xla
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/compiler/tf2xla/python/xla.py", line 28, in <module>
+    from tensorflow.compiler.xla import xla_data_pb2
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 941, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1039, in get_data
+KeyboardInterrupt

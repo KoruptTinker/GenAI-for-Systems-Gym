@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/gpfs_common/share01/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/LSTM/cache_replacement/policy_learning/cache/main.py", line 37, in <module>
+    from torch.utils.tensorboard import SummaryWriter
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/torch/__init__.py", line 2016, in <module>
+    from torch import _VF as _VF, functional as functional  # usort: skip
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/torch/functional.py", line 7, in <module>
+    import torch.nn.functional as F
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/torch/nn/__init__.py", line 8, in <module>
+    from torch.nn.modules import *  # usort: skip # noqa: F403
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/torch/nn/modules/__init__.py", line 2, in <module>
+    from .linear import Bilinear, Identity, LazyLinear, Linear  # usort: skip
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/torch/nn/modules/linear.py", line 7, in <module>
+    from torch.nn import functional as F, init
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/torch/nn/functional.py", line 11, in <module>
+    from torch._jit_internal import (
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/torch/_jit_internal.py", line 43, in <module>
+    import torch.distributed.rpc
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/torch/distributed/rpc/__init__.py", line 73, in <module>
+    from . import api, backend_registry, functions
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/torch/distributed/rpc/api.py", line 33, in <module>
+    from torch.futures import Future
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 978, in get_code
+  File "<frozen importlib._bootstrap_external>", line 647, in _compile_bytecode
+KeyboardInterrupt
