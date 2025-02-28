@@ -1,0 +1,64 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@c026n04>
+Subject: Job 64304: <evaluation_phase_layers_4> in cluster <Hazel> Done
+
+Job <evaluation_phase_layers_4> was submitted from host <login03> by user <bkbhayan> in cluster <Hazel> at Wed Feb 26 00:42:32 2025
+Job was executed on host(s) <c026n04>, in queue <serial>, as user <bkbhayan> in cluster <Hazel> at Wed Feb 26 00:42:33 2025
+</home/bkbhayan> was used as the home directory.
+</share/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/MLP_Layers_4/scripts> was used as the working directory.
+Started at Wed Feb 26 00:42:33 2025
+Terminated at Wed Feb 26 00:51:59 2025
+Results reported at Wed Feb 26 00:51:59 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -n 1
+#BSUB -W 48:00
+#BSUB -J evaluation_phase_layers_4
+#BSUB -o /share/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/MLP_Layers_4/logs/out_layers_4_eval.%J
+#BSUB -e /share/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/MLP_Layers_4/logs/err_layers_4_eval.%J
+
+source ~/.bashrc
+conda activate /share/$GROUP/conda_env/new_env
+cd /share/$GROUP/$USER/GenAI-for-Systems-Gym/homework-1/models/MLP_Layers_4
+
+python3 -m cache_replacement.policy_learning.cache.main \
+  --experiment_base_dir=/share/$GROUP/$USER/GenAI-for-Systems-Gym/homework-1/models/MLP_Layers_4/experiments\
+  --experiment_name=evaluation_phase_layers_4 \
+  --cache_configs="cache_replacement/policy_learning/cache/configs/default.json" \
+  --cache_configs="cache_replacement/policy_learning/cache/configs/eviction_policy/learned.json" \
+  --memtrace_file="/share/csc591s25/traces/astar_313B_test.csv" \
+  --config_bindings="associativity=16" \
+  --config_bindings="capacity=2097152" \
+  --config_bindings="eviction_policy.scorer.checkpoint=\"/share/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/MLP_Layers_4/experiments/mlp_layers_4/checkpoints/20000.ckpt\"" \
+  --config_bindings="eviction_policy.scorer.config_path=\"/share/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/MLP_Layers_4/experiments/mlp_layers_4/model_config.json\"" \
+  --warmup_period=0
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   187.71 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                7
+    Run time :                                   584 sec.
+    Turnaround time :                            567 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </share/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/MLP_Layers_4/logs/err_layers_4_eval.64304> for stderr output of this job.
+
