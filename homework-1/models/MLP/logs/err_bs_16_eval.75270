@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/gpfs_common/share01/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/MLP/cache_replacement/policy_learning/cache/main.py", line 38, in <module>
+    import tensorflow.compat.v1 as tf
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/tensorflow/__init__.py", line 30, in <module>
+    import distutils as _distutils
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 982, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 925, in _find_spec
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/_distutils_hack/__init__.py", line 109, in find_spec
+    return method()
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/_distutils_hack/__init__.py", line 120, in spec_for_distutils
+    mod = importlib.import_module('setuptools._distutils')
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 846, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 941, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1039, in get_data
+KeyboardInterrupt
