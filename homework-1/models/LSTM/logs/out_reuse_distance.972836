@@ -1,0 +1,65 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@gpu03>
+Subject: Job 972836: <reuse_distance> in cluster <Hazel> Exited
+
+Job <reuse_distance> was submitted from host <login03> by user <bkbhayan> in cluster <Hazel> at Thu Feb 20 14:09:53 2025
+Job was executed on host(s) <gpu03>, in queue <gpu>, as user <bkbhayan> in cluster <Hazel> at Thu Feb 20 14:18:08 2025
+</home/bkbhayan> was used as the home directory.
+</share/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/LSTM/scripts> was used as the working directory.
+Started at Thu Feb 20 14:18:08 2025
+Terminated at Fri Feb 21 03:43:43 2025
+Results reported at Fri Feb 21 03:43:43 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -n 1
+#BSUB -W 48:00
+#BSUB -q gpu
+#BSUB -gpu "num=1"
+#BSUB -J reuse_distance
+#BSUB -o /share/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/LSTM/logs/out_reuse_distance.%J
+#BSUB -e /share/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/LSTM/logs/err_reuse_distance.%J
+
+source ~/.bashrc
+conda activate /share/$GROUP/conda_env/new_env
+cd /share/$GROUP/$USER/GenAI-for-Systems-Gym/homework-1/models/LSTM
+
+python3 -m cache_replacement.policy_learning.cache_model.main \
+  --experiment_base_dir=/share/$GROUP/$USER/GenAI-for-Systems-Gym/homework-1/models/LSTM/experiments \
+  --experiment_name=reuse_distance \
+  --cache_configs=cache_replacement/policy_learning/cache/configs/default.json \
+  --model_bindings="loss=[\"ndcg\"]" \
+  --model_bindings="address_embedder.max_vocab_size=5000" \
+  --train_memtrace=/share/$GROUP/traces/astar_313B_train.csv \
+  --valid_memtrace=/share/$GROUP/traces/astar_313B_valid.csv
+
+------------------------------------------------------------
+
+TERM_OWNER: job killed by owner.
+Exited with exit code 143.
+
+Resource usage summary:
+
+    CPU time :                                   48113.00 sec.
+    Max Memory :                                 8 GB
+    Average Memory :                             6.46 GB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                10
+    Run time :                                   48362 sec.
+    Turnaround time :                            48830 sec.
+
+The output (if any) is above this job summary.
+
+
+
+PS:
+
+Read file </share/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/LSTM/logs/err_reuse_distance.972836> for stderr output of this job.
+
