@@ -1,0 +1,5 @@
+{
+    "memtrace_file": "/share/csc591s25/traces/astar_313B_test.csv",
+    "tb_freq": 10000,
+    "warmup_period": 0
+}
