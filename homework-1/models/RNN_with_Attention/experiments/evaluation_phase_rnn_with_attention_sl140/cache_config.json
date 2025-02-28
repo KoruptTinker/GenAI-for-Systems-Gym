@@ -1,0 +1,13 @@
+{
+    "associativity": 16,
+    "cache_line_size": 64,
+    "capacity": 2097152,
+    "eviction_policy": {
+        "policy_type": "greedy",
+        "scorer": {
+            "checkpoint": "/share/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/RNN_with_Attention/experiments/rnn_with_attention_sl140/checkpoints/20000.ckpt",
+            "config_path": "/share/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/RNN_with_Attention/experiments/rnn_with_attention_sl140/model_config.json",
+            "type": "learned"
+        }
+    }
+}

@@ -1,0 +1,47 @@
+2025-02-19 22:28:14.391706: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1740022094.698504 1577407 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1740022094.706597 1577407 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-02-19 22:28:15.198572: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-02-19 22:28:39.313300: E external/local_xla/xla/stream_executor/cuda/cuda_driver.cc:152] failed call to cuInit: INTERNAL: CUDA error: Failed call to cuInit: UNKNOWN ERROR (303)
+I0219 22:28:39.394600 23340774740672 utils.py:24] Experiment directory: /share/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/RNN_with_Attention/experiments/evaluation_phase_sl_80
+I0219 22:28:39.424678 23340774740672 main.py:110] Config: {
+    "associativity": 16,
+    "cache_line_size": 64,
+    "capacity": 2097152,
+    "eviction_policy": {
+        "policy_type": "greedy",
+        "scorer": {
+            "checkpoint": "/share/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/RNN_with_Attention/experiments/evaluation_phase_sl_80/checkpoints/20000.ckpt",
+            "config_path": "/share/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/RNN_with_Attention/experiments/evaluation_phase_sl_80/model_config.json",
+            "type": "learned"
+        }
+    }
+}
+I0219 22:28:39.424988 23340774740672 main.py:111] Flags: {
+    "memtrace_file": "/share/csc591s25/traces/astar_313B_test.csv",
+    "tb_freq": 10000,
+    "warmup_period": 0
+}
+Initializing MemoryTrace:   0%|          | 0/10000000 [00:00<?, ?it/s]Initializing MemoryTrace:   0%|          | 16986/10000000 [00:00<00:58, 169824.53it/s]Initializing MemoryTrace:   0%|          | 44062/10000000 [00:00<00:43, 229184.68it/s]Initializing MemoryTrace:   1%|          | 80754/10000000 [00:00<00:33, 292060.08it/s]Initializing MemoryTrace:   1%|          | 118179/10000000 [00:00<00:30, 324496.80it/s]Initializing MemoryTrace:   2%|▏         | 218577/10000000 [00:00<00:17, 569494.51it/s]Initializing MemoryTrace:   4%|▍         | 418462/10000000 [00:00<00:09, 1055433.19it/s]Initializing MemoryTrace:   6%|▋         | 642543/10000000 [00:00<00:06, 1442916.77it/s]Initializing MemoryTrace:   9%|▉         | 892106/10000000 [00:00<00:05, 1778011.79it/s]Initializing MemoryTrace:  11%|█▏        | 1149551/10000000 [00:00<00:04, 2026955.42it/s]Initializing MemoryTrace:  14%|█▍        | 1417206/10000000 [00:01<00:03, 2227452.70it/s]Initializing MemoryTrace:  17%|█▋        | 1689218/10000000 [00:01<00:03, 2378187.78it/s]Initializing MemoryTrace:  20%|█▉        | 1962449/10000000 [00:01<00:03, 2485861.70it/s]Initializing MemoryTrace:  22%|██▏       | 2240916/10000000 [00:01<00:03, 2576348.55it/s]Initializing MemoryTrace:  25%|██▌       | 2522432/10000000 [00:01<00:02, 2648429.78it/s]Initializing MemoryTrace:  28%|██▊       | 2805684/10000000 [00:01<00:02, 2703880.10it/s]Initializing MemoryTrace:  31%|███       | 3091985/10000000 [00:01<00:02, 2751743.72it/s]Initializing MemoryTrace:  34%|███▎      | 3374829/10000000 [00:01<00:02, 2774513.88it/s]Initializing MemoryTrace:  37%|███▋      | 3660710/10000000 [00:01<00:02, 2799802.19it/s]Initializing MemoryTrace:  39%|███▉      | 3948810/10000000 [00:01<00:02, 2824151.85it/s]Initializing MemoryTrace:  42%|████▏     | 4236944/10000000 [00:02<00:02, 2841283.08it/s]Initializing MemoryTrace:  45%|████▌     | 4521073/10000000 [00:02<00:01, 2822441.35it/s]Initializing MemoryTrace:  48%|████▊     | 4810632/10000000 [00:02<00:01, 2844249.88it/s]Initializing MemoryTrace:  51%|█████     | 5099850/10000000 [00:02<00:01, 2858549.56it/s]Initializing MemoryTrace:  54%|█████▍    | 5391711/10000000 [00:02<00:01, 2876497.34it/s]Initializing MemoryTrace:  57%|█████▋    | 5681837/10000000 [00:02<00:01, 2883874.64it/s]Initializing MemoryTrace:  60%|█████▉    | 5972676/10000000 [00:02<00:01, 2891174.78it/s]Initializing MemoryTrace:  63%|██████▎   | 6262057/10000000 [00:02<00:01, 2891707.23it/s]Initializing MemoryTrace:  66%|██████▌   | 6551237/10000000 [00:02<00:01, 2890655.18it/s]Initializing MemoryTrace:  68%|██████▊   | 6840357/10000000 [00:02<00:01, 2890771.82it/s]Initializing MemoryTrace:  71%|███████▏  | 7132875/10000000 [00:03<00:00, 2901052.78it/s]Initializing MemoryTrace:  74%|███████▍  | 7423264/10000000 [00:03<00:00, 2901865.06it/s]Initializing MemoryTrace:  77%|███████▋  | 7715171/10000000 [00:03<00:00, 2906988.65it/s]Initializing MemoryTrace:  80%|████████  | 8006417/10000000 [00:03<00:00, 2908595.23it/s]Initializing MemoryTrace:  83%|████████▎ | 8297906/10000000 [00:03<00:00, 2910446.76it/s]Initializing MemoryTrace:  86%|████████▌ | 8589934/10000000 [00:03<00:00, 2913359.75it/s]Initializing MemoryTrace:  89%|████████▉ | 8881617/10000000 [00:03<00:00, 2914351.55it/s]Initializing MemoryTrace:  92%|█████████▏| 9174166/10000000 [00:03<00:00, 2917651.95it/s]Initializing MemoryTrace:  95%|█████████▍| 9466678/10000000 [00:03<00:00, 2919851.30it/s]Initializing MemoryTrace:  98%|█████████▊| 9758664/10000000 [00:03<00:00, 2914516.29it/s]Initializing MemoryTrace: 100%|██████████| 10000000/10000000 [00:03<00:00, 2508296.24it/s]
+Traceback (most recent call last):
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "/gpfs_common/share01/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/RNN_with_Attention/cache_replacement/policy_learning/cache/main.py", line 161, in <module>
+    app.run(main)
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/share/csc591s25/conda_env/new_env/lib/python3.9/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+  File "/gpfs_common/share01/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/RNN_with_Attention/cache_replacement/policy_learning/cache/main.py", line 122, in main
+    cache = cache_mod.Cache.from_config(cache_config, trace=trace)
+  File "/gpfs_common/share01/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/RNN_with_Attention/cache_replacement/policy_learning/cache/cache.py", line 194, in from_config
+    eviction_policy = eviction_policy_from_config(
+  File "/gpfs_common/share01/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/RNN_with_Attention/cache_replacement/policy_learning/cache/cache.py", line 180, in eviction_policy_from_config
+    scorer = scorer_from_config(config.get("scorer"), trace)
+  File "/gpfs_common/share01/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/RNN_with_Attention/cache_replacement/policy_learning/cache/cache.py", line 171, in scorer_from_config
+    with open(config.get("config_path"), "r") as model_config:
+FileNotFoundError: [Errno 2] No such file or directory: '/share/csc591s25/bkbhayan/GenAI-for-Systems-Gym/homework-1/models/RNN_with_Attention/experiments/evaluation_phase_sl_80/model_config.json'
